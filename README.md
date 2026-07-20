@@ -1,11 +1,24 @@
-# BACKROOM LP Ver.2
+# BACKROOM Final Stable Edition
 
-写真を使ったブランドサイト版です。SNS運用・広告運用セクションも追加済みです。
+Ver.2の安定した構造を残しながら、ブランドサイトとして以下を強化しました。
 
-## GitHubにアップするもの
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets` フォルダ一式
+- ファーストビューのコピーと文字サイズ
+- BACKROOMの意味が伝わるABOUT
+- SERVICEの見せ方
+- 写真中心の構成
+- WORKSの大型実績数字
+- SNS運用・Meta広告セクション
+- STANDARD SETの料金表示
+- READY?から始まる問い合わせ導線
+- スマートフォン表示の安定性
 
-既存ファイルを上書きしてコミットすると、XServer Staticへ自動反映されます。
+## 公開方法
+
+ZIPを解凍して、GitHubの既存リポジトリへ以下を上書きアップロードしてください。
+
+- index.html
+- styles.css
+- script.js
+- assets フォルダ
+
+アップロード後に「変更をコミットする」を押すと、XServer Staticへ自動反映されます。
