@@ -3,35 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BACKROOM｜アパレルECの裏側を、ひとつに。</title>
-  <meta name="description" content="撮影、採寸、商品登録、保管、梱包、発送、SNS運用、Meta広告。BACKROOMはアパレルECのバックオフィスを一括で支えます。">
+  <title>BACKROOM｜アパレルECの撮影・採寸・保管・発送・SNS運用</title>
+  <meta name="description" content="撮影、採寸、商品登録、保管、梱包、発送、SNS運用。BACKROOMはアパレルECの裏側をまとめて支えます。">
   <meta property="og:title" content="BACKROOM｜Behind your brand.">
-  <meta property="og:description" content="あなたはブランドを前に進める。売るための裏側は、BACKROOMが支えます。">
+  <meta property="og:description" content="アパレルECのすべての裏側を支え、あなたのブランドが前に進む時間をつくります。">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0c0c0c">
+  <meta name="theme-color" content="#f7f7f4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="page-progress" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a href="#top" class="wordmark">backroom.</a>
-    <nav class="desktop-nav" aria-label="メインナビゲーション">
-      <a href="#what">WHAT WE DO</a>
-      <a href="#proof">PROOF</a>
-      <a href="#sns">SNS / ADS</a>
-      <a href="#price">PRICE</a>
-    </nav>
-    <a class="header-contact" href="#contact">CONTACT ↗</a>
-    <button class="menu-button" aria-expanded="false" aria-controls="mobile-nav">MENU</button>
-    <nav id="mobile-nav" class="mobile-nav">
-      <a href="#what">WHAT WE DO</a>
-      <a href="#proof">PROOF</a>
-      <a href="#sns">SNS / ADS</a>
+  <header class="header">
+    <a href="#top" class="brand">backroom.</a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav id="nav">
+      <a href="#service">SERVICE</a>
+      <a href="#workflow">WORKFLOW</a>
+      <a href="#sns">SNS</a>
       <a href="#price">PRICE</a>
       <a href="#contact">CONTACT</a>
     </nav>
@@ -39,215 +29,120 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-media" data-parallax="0.14">
-        <img src="./assets/shoot-wide.webp" alt="BACKROOMの撮影スタジオ">
-      </div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow reveal-text">APPAREL EC BACKOFFICE</p>
-        <h1 class="split-title">
-          <span>Behind</span>
-          <span>your brand.</span>
-        </h1>
-        <div class="hero-bottom">
-          <p class="hero-lead reveal">
-            あなたは、ブランドを前に進める。<br>
-            売るための裏側は、BACKROOMが支えます。
-          </p>
-          <a class="circle-link reveal" href="#what" aria-label="サービスを見る">
-            <span>SCROLL</span><b>↓</b>
-          </a>
+      <div class="hero-copy reveal">
+        <p class="kicker">APPAREL EC BACKOFFICE SUPPORT</p>
+        <h1>Behind<br>your brand.</h1>
+        <p>
+          撮影・採寸・商品登録・保管・梱包・発送・SNS運用。<br>
+          アパレルECのすべての裏側を支え、<br>
+          あなたのブランドが前に進む時間をつくります。
+        </p>
+        <div class="hero-actions">
+          <a class="btn dark" href="#contact">無料で相談する</a>
+          <a class="under-link" href="#service">サービスを見る ↘</a>
         </div>
       </div>
-      <div class="hero-index">
-        <span>SAGAMIHARA / JAPAN</span>
-        <span>EST. 2026</span>
-      </div>
-    </section>
-
-    <section class="manifesto">
-      <p class="section-tag">01 / PURPOSE</p>
-      <div class="manifesto-copy">
-        <p class="big-copy reveal">
-          撮影会社ではない。<br>
-          発送代行だけでもない。
-        </p>
-        <p class="big-copy reveal">
-          <span>商品が届いてから、売れて、届くまで。</span><br>
-          アパレルECの裏側を、ひとつにつなぐ。
-        </p>
-      </div>
-    </section>
-
-    <section id="what" class="services">
-      <div class="services-sticky">
-        <p class="section-tag">02 / WHAT WE DO</p>
-        <h2>販売の流れを、<br>止めない。</h2>
-        <p>必要な作業だけでも、すべてまとめても。副業販売、古着店、ブランド、法人まで対応します。</p>
-      </div>
-
-      <div class="service-list">
-        <article class="service-row reveal">
-          <span class="service-no">01</span>
-          <div><h3>撮影・採寸</h3><p>アイロンから撮影、採寸データまで。ECとSNSで使いやすい形に整えます。</p></div>
-          <b>PHOTO / MEASURE</b>
-        </article>
-        <article class="service-row reveal">
-          <span class="service-no">02</span>
-          <div><h3>商品登録・編集</h3><p>画像整理、商品説明、販売ページへの登録まで、出品作業を軽くします。</p></div>
-          <b>LISTING / EDIT</b>
-        </article>
-        <article class="service-row reveal">
-          <span class="service-no">03</span>
-          <div><h3>保管・在庫管理</h3><p>撮影後の商品を整理して保管。注文が入るまでバックヤードを預かります。</p></div>
-          <b>STORAGE</b>
-        </article>
-        <article class="service-row reveal">
-          <span class="service-no">04</span>
-          <div><h3>梱包・発送</h3><p>注文情報を受け取り、梱包から購入者への発送まで一貫して対応します。</p></div>
-          <b>PACK / SHIP</b>
-        </article>
-        <article class="service-row reveal">
-          <span class="service-no">05</span>
-          <div><h3>SNS運用・広告</h3><p>Instagram投稿、リール、Meta広告、分析改善。撮ったあとも売れるまで支えます。</p></div>
-          <b>SNS / META ADS</b>
-        </article>
-      </div>
-    </section>
-
-    <section class="editorial-gallery">
-      <figure class="photo-panel panel-a reveal">
-        <img src="./assets/shoot-floor.webp" alt="床置き撮影の準備風景">
-        <figcaption><span>01</span> SHOOTING</figcaption>
+      <figure class="hero-image reveal">
+        <img src="./assets/shoot-wide.webp" alt="BACKROOMのアパレル撮影スペース">
       </figure>
-      <div class="gallery-copy reveal">
-        <p>商品を受け取る。</p>
-        <p>整える。</p>
-        <p>測る。</p>
-        <p>撮る。</p>
-        <p>売る。</p>
-        <p>届ける。</p>
+    </section>
+
+    <section id="service" class="service-strip">
+      <div class="section-label">SERVICE</div>
+      <div class="service-items">
+        <article><span class="icon">◉</span><h2>撮影・採寸</h2><p>EC・SNS向けの商品撮影と採寸データ作成。</p></article>
+        <article><span class="icon">T</span><h2>商品登録・編集</h2><p>商品説明、画像整理、登録作業をサポート。</p></article>
+        <article><span class="icon">□</span><h2>保管・管理</h2><p>撮影後の商品を整理し、販売中も管理。</p></article>
+        <article><span class="icon">▣</span><h2>梱包・発送</h2><p>受注後の梱包から購入者への発送まで。</p></article>
+        <article><span class="icon">▯</span><h2>SNS運用</h2><p>投稿制作、リール、広告運用、分析改善。</p></article>
       </div>
-      <figure class="photo-panel panel-b reveal">
+    </section>
+
+    <section class="statement">
+      <p class="section-label">ABOUT</p>
+      <div class="statement-grid">
+        <h2 class="reveal">売るために必要な、<br>見えない仕事を。</h2>
+        <div class="reveal">
+          <p>古着・アパレル販売は、仕入れた後からが長い。</p>
+          <p>BACKROOMは、販売前の準備から購入後の発送、さらにSNS集客までを一つの流れとして支えます。必要な工程だけでも、まとめてでも利用できます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="gallery">
+      <article class="gallery-card large reveal">
+        <img src="./assets/shoot-floor.webp" alt="商品撮影の準備風景">
+        <div><span>01</span><h3>SHOOTING</h3><p>商品を整え、販売に使いやすい写真を撮影。</p></div>
+      </article>
+      <article class="gallery-card reveal">
         <img src="./assets/measure.webp" alt="シャツを採寸している様子">
-        <figcaption><span>02</span> MEASURE</figcaption>
-      </figure>
-      <figure class="photo-panel panel-c reveal">
-        <img src="./assets/packing.webp" alt="商品を梱包している様子">
-        <figcaption><span>03</span> PACKING</figcaption>
-      </figure>
+        <div><span>02</span><h3>MEASURE</h3><p>アイテムに合わせた項目を丁寧に採寸。</p></div>
+      </article>
+      <article class="gallery-card reveal">
+        <img src="./assets/packing.webp" alt="アパレル商品を梱包している様子">
+        <div><span>03</span><h3>PACKING</h3><p>販売後は梱包し、購入者への発送まで。</p></div>
+      </article>
     </section>
 
-    <section id="proof" class="proof">
-      <div class="proof-head">
-        <p class="section-tag">03 / PROOF</p>
-        <h2 class="reveal">経験は、<br>作業の速さと精度になる。</h2>
-      </div>
-      <div class="proof-grid">
-        <article class="metric reveal">
-          <div><strong data-count="10000">0</strong><span>点</span></div>
-          <p>年間撮影経験</p>
-        </article>
-        <article class="metric reveal">
-          <div><strong data-count="2000">0</strong><span>+</span></div>
-          <p>累計対応点数</p>
-        </article>
-        <article class="metric reveal">
-          <div><strong data-count="8">0</strong><span>社+</span></div>
-          <p>取引実績</p>
-        </article>
-      </div>
-      <p class="proof-note reveal">古着屋として実際に販売する側だからこそ、<br>「作業するための作業」ではなく、売るための工程として扱います。</p>
+    <section class="numbers">
+      <div class="number reveal"><strong data-count="2000">0</strong><span>+</span><p>累計対応点数</p></div>
+      <div class="number reveal"><strong data-count="8">0</strong><span>社+</span><p>取引実績</p></div>
+      <div class="number reveal"><strong data-count="10000">0</strong><span>点</span><p>年間撮影経験</p></div>
     </section>
 
-    <section id="sns" class="campaign">
-      <div class="campaign-media" data-parallax="0.09">
-        <img src="./assets/shoot-light-close.webp" alt="撮影用ライトと商品撮影">
+    <section id="sns" class="sns-section">
+      <div class="sns-visual reveal">
+        <img src="./assets/shoot-light-close.webp" alt="撮影用ライトとアパレル商品の撮影現場">
       </div>
-      <div class="campaign-overlay"></div>
-      <div class="campaign-content">
-        <p class="section-tag light">04 / SNS & ADVERTISING</p>
-        <h2 class="reveal">撮ったあとも、<br>売れるまで。</h2>
-        <p class="reveal">
-          SNSは、投稿するだけでは伸びない。<br>
-          企画、制作、配信、分析、改善までを一つの運用として設計します。
-        </p>
-        <div class="campaign-services">
-          <div class="reveal"><span>01</span><b>Instagram運用</b><small>投稿企画・制作・運用</small></div>
-          <div class="reveal"><span>02</span><b>Reels</b><small>構成・編集・改善</small></div>
-          <div class="reveal"><span>03</span><b>Meta Ads</b><small>広告設計・配信・最適化</small></div>
-          <div class="reveal"><span>04</span><b>Analytics</b><small>数値分析・改善提案</small></div>
-        </div>
+      <div class="sns-copy reveal">
+        <p class="section-label">SNS & ADVERTISING</p>
+        <h2>撮ったあとも、<br>売れるまで支える。</h2>
+        <p>写真を納品して終わりではなく、Instagramを中心とした発信と広告運用まで対応。ブランドの魅力を継続して届け、認知・アクセス・購入につながる運用を支えます。</p>
+        <ul>
+          <li><span>01</span>Instagram投稿企画・制作</li>
+          <li><span>02</span>リール構成・編集</li>
+          <li><span>03</span>Meta広告運用</li>
+          <li><span>04</span>数値分析・改善提案</li>
+        </ul>
+        <p class="note">※SNS運用・広告運用は内容に応じて個別見積もり。</p>
       </div>
     </section>
 
-    <section id="price" class="pricing">
-      <div class="pricing-head">
-        <p class="section-tag">05 / PRICE</p>
-        <h2 class="reveal">シンプルに、<br>必要な分だけ。</h2>
+    <section id="price" class="price-section">
+      <div>
+        <p class="section-label">PRICE</p>
+        <h2 class="reveal">必要な作業を、<br>必要な分だけ。</h2>
       </div>
-      <div class="price-grid">
-        <article class="featured-price reveal">
-          <p>STANDARD SET</p>
-          <h3>撮影＋採寸＋商品説明</h3>
-          <div><strong>¥700</strong><span>/ 1点</span></div>
-          <small>アイロン込み</small>
-        </article>
-        <div class="price-list reveal">
-          <div><span>撮影</span><b>¥500 / 点</b></div>
-          <div><span>採寸</span><b>¥100 / 点</b></div>
-          <div><span>商品説明</span><b>¥100 / 点</b></div>
-          <div><span>保管</span><b>¥1,500 / 箱・月</b></div>
-          <div><span>梱包・発送</span><b>¥300〜 / 件</b></div>
-          <div><span>SNS運用・広告</span><b>個別見積もり</b></div>
-        </div>
-      </div>
-      <p class="price-note">※送料・資材・特殊商品の作業費は別途。数量や運用内容に応じて正式なお見積もりをご案内します。</p>
-    </section>
-
-    <section class="process">
-      <p class="section-tag">06 / FLOW</p>
-      <div class="process-track">
-        <article class="reveal"><span>01</span><h3>相談</h3><p>点数・作業内容・現在の課題を共有。</p></article>
-        <article class="reveal"><span>02</span><h3>見積</h3><p>料金とスケジュールをご案内。</p></article>
-        <article class="reveal"><span>03</span><h3>発送</h3><p>商品をBACKROOMへ送付。</p></article>
-        <article class="reveal"><span>04</span><h3>作業</h3><p>撮影・採寸・登録などを実施。</p></article>
-        <article class="reveal"><span>05</span><h3>運用</h3><p>保管・発送・SNSまで継続支援。</p></article>
+      <div class="price-table reveal">
+        <div><span>撮影</span><strong>¥500 / 点</strong></div>
+        <div><span>採寸</span><strong>¥100 / 点</strong></div>
+        <div><span>商品説明</span><strong>¥100 / 点</strong></div>
+        <div><span>保管</span><strong>¥1,500 / 箱・月</strong></div>
+        <div><span>梱包・発送</span><strong>¥300〜 / 件</strong></div>
+        <div><span>SNS運用・広告</span><strong>個別見積もり</strong></div>
       </div>
     </section>
 
-    <section class="final-statement">
-      <div class="final-logo-wrap reveal">
-        <img src="./assets/logo.webp" alt="backroom.">
-      </div>
-      <p class="reveal">ブランドの表側を輝かせるために、<br>裏側を強くする。</p>
+    <section class="logo-section">
+      <img src="./assets/logo.webp" alt="backroom. ロゴ">
     </section>
 
     <section id="contact" class="contact">
-      <div class="contact-top">
-        <p class="section-tag light">07 / CONTACT</p>
-        <span>READY?</span>
+      <div class="reveal">
+        <p class="section-label">CONTACT</p>
+        <h2>ブランドの裏側を、<br>一緒につくる。</h2>
+        <p>ご相談・お見積もりは無料です。点数、作業内容、現在のお悩みを添えてお問い合わせください。</p>
+        <div class="contact-actions">
+          <a class="btn light" href="mailto:backroom.works2026@gmail.com?subject=BACKROOMへのお問い合わせ">メールで問い合わせる</a>
+          <a class="btn outline" href="https://www.instagram.com/backroom.works/" target="_blank" rel="noopener">Instagram DM</a>
+        </div>
       </div>
-      <h2 class="reveal">ブランドを前に進める<br>準備はできています。</h2>
-      <p class="contact-copy reveal">
-        撮影だけでも。発送だけでも。SNSだけでも。<br>
-        ご相談・お見積もりは無料です。
-      </p>
-      <div class="contact-actions reveal">
-        <a href="mailto:backroom.works2026@gmail.com?subject=BACKROOMへのお問い合わせ" class="contact-button">
-          <span>メールで相談する</span><b>↗</b>
-        </a>
-        <a href="https://www.instagram.com/backroom.works/" target="_blank" rel="noopener" class="contact-button alt">
-          <span>Instagram DM</span><b>↗</b>
-        </a>
-      </div>
-      <div class="contact-mail">backroom.works2026@gmail.com</div>
     </section>
   </main>
 
   <footer>
-    <a href="#top" class="wordmark">backroom.</a>
-    <p>SAGAMIHARA, KANAGAWA</p>
+    <a href="#top" class="brand">backroom.</a>
+    <p>撮影・採寸・商品登録・保管・梱包・発送・SNS運用</p>
     <small>© 2026 BACKROOM</small>
   </footer>
 
