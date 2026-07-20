@@ -1,20 +1,11 @@
-# BACKROOM LP
+# BACKROOM LP Ver.2
 
-XServer Static公開用の静的サイトです。
+写真を使ったブランドサイト版です。SNS運用・広告運用セクションも追加済みです。
 
-## ファイル
+## GitHubにアップするもの
 - `index.html`
 - `styles.css`
 - `script.js`
+- `assets` フォルダ一式
 
-## GitHubへのアップロード
-1. GitHubの `backroom` リポジトリを開く
-2. `Add file` → `Upload files`
-3. この3ファイルをドラッグ＆ドロップ
-4. `Commit changes`
-5. XServer Staticが自動デプロイするまで数分待つ
-
-## 修正ポイント
-- Instagram URLは `index.html` 内の `https://www.instagram.com/backroom.works/`
-- メールアドレスは `backroom.works2026@gmail.com`
-- 料金・実績は現時点の内容で仮設定
+既存ファイルを上書きしてコミットすると、XServer Staticへ自動反映されます。
