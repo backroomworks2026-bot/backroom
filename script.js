@@ -46,17 +46,24 @@ document.querySelectorAll(".price-toggle").forEach((button) => {
     detail.classList.toggle("is-open");
   });
 });
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".service-toggle").forEach((button) => {
-    button.addEventListener("click", () => {
-      const detail = button.nextElementSibling;
+const serviceButtons = document.querySelectorAll(".service-toggle");
 
-      if (!detail) return;
+serviceButtons.forEach((button) => {
+  const detail = button.nextElementSibling;
 
-      const isOpen = button.classList.contains("is-open");
+  if (!detail) return;
 
-      button.classList.toggle("is-open", !isOpen);
-      detail.classList.toggle("is-open", !isOpen);
-    });
+  detail.style.display = "none";
+
+  button.addEventListener("click", () => {
+    const isOpen = detail.style.display === "block";
+
+    if (isOpen) {
+      detail.style.display = "none";
+      button.classList.remove("is-open");
+    } else {
+      detail.style.display = "block";
+      button.classList.add("is-open");
+    }
   });
 });
