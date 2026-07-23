@@ -46,11 +46,17 @@ document.querySelectorAll(".price-toggle").forEach((button) => {
     detail.classList.toggle("is-open");
   });
 });
-document.querySelectorAll(".service-toggle").forEach((button) => {
-  button.addEventListener("click", () => {
-    const detail = button.nextElementSibling;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".service-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const detail = button.nextElementSibling;
 
-    button.classList.toggle("is-open");
-    detail.classList.toggle("is-open");
+      if (!detail) return;
+
+      const isOpen = button.classList.contains("is-open");
+
+      button.classList.toggle("is-open", !isOpen);
+      detail.classList.toggle("is-open", !isOpen);
+    });
   });
 });
