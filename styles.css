@@ -709,3 +709,89 @@ footer small{margin-left:auto;color:#666}
     padding-left: 18px;
   }
 }
+/* SERVICE スマホ最終修正 */
+
+/* 閉じている詳細は必ず非表示 */
+.br-service__item:not([open]) > .br-service__body {
+  display: none !important;
+}
+
+.br-service__item[open] > .br-service__body {
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  .br-service__grid {
+    display: block !important;
+    border-top: 1px solid #d8d8d2;
+  }
+
+  .br-service__item,
+  .br-service__item:first-child,
+  .br-service__item:nth-child(odd) {
+    display: block !important;
+    width: 100% !important;
+    border: 0 !important;
+    border-bottom: 1px solid #d8d8d2 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
+  .br-service__summary,
+  .br-service__item:nth-child(even) .br-service__summary {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 28px 42px 26px 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    text-align: left !important;
+  }
+
+  .br-service__item[open] .br-service__summary {
+    background: transparent !important;
+  }
+
+  .br-service__icon {
+    width: 52px !important;
+    height: 52px !important;
+    margin: 0 0 22px !important;
+    font-size: 22px !important;
+  }
+
+  .br-service__summary h2 {
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    text-align: left !important;
+  }
+
+  .br-service__summary p {
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    text-align: left !important;
+  }
+
+  .br-service__plus {
+    position: absolute !important;
+    top: 30px !important;
+    right: 4px !important;
+    margin: 0 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
+  .br-service__body,
+  .br-service__item:nth-child(even) .br-service__body {
+    width: 100% !important;
+    padding: 0 0 30px !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+  }
+
+  .br-service__body ul {
+    padding-left: 1.4em !important;
+  }
+}
