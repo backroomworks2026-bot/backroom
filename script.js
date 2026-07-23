@@ -38,3 +38,11 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll(".price-toggle").forEach((button) => {
+  button.addEventListener("click", () => {
+    const detail = button.nextElementSibling;
+
+    button.classList.toggle("is-open");
+    detail.classList.toggle("is-open");
+  });
+});
