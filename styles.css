@@ -437,3 +437,82 @@ footer small{margin-left:auto;color:#666}
     max-height: 700px !important;
   }
 }
+/* SERVICE アコーディオン最終修正 */
+.service-accordion .service-item {
+  display: block !important;
+  position: relative;
+  overflow: visible !important;
+}
+
+.service-accordion .service-toggle {
+  display: block !important;
+  position: relative;
+  width: 100%;
+  padding: 0 38px 28px 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.service-accordion .service-detail {
+  width: 100% !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  grid-template-rows: none !important;
+}
+
+.service-accordion .service-detail-inner {
+  display: block !important;
+  width: 100%;
+  padding: 0 0 30px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow: visible !important;
+}
+
+.service-accordion .service-detail-inner p {
+  display: block !important;
+  margin: 0 0 14px;
+}
+
+.service-accordion .service-detail-inner ul {
+  display: block !important;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.service-accordion .service-detail-inner li {
+  display: list-item !important;
+  margin-bottom: 5px;
+}
+
+.service-accordion .service-plus {
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.service-accordion .service-toggle.is-open .service-plus {
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .service-accordion .service-detail {
+    max-height: none !important;
+    height: auto !important;
+  }
+
+  .service-accordion .service-toggle {
+    padding-right: 32px;
+  }
+}
