@@ -252,3 +252,103 @@ footer small{margin-left:auto;color:#666}
     line-height: 1.8;
   }
 }
+/* SERVICE アコーディオン */
+.service-accordion .service-item {
+  position: relative;
+  display: block;
+  padding: 0;
+}
+
+.service-accordion .service-toggle {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 42px 34px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.service-accordion .service-toggle .icon {
+  display: flex;
+}
+
+.service-accordion .service-toggle h2 {
+  margin: 24px 0 12px;
+}
+
+.service-accordion .service-toggle p {
+  margin: 0;
+}
+
+.service-plus {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  color: #111;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.service-toggle.is-open .service-plus {
+  transform: rotate(45deg);
+}
+
+.service-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.service-detail.is-open {
+  grid-template-rows: 1fr;
+}
+
+.service-detail-inner {
+  min-height: 0;
+  overflow: hidden;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.service-detail-inner > :first-child {
+  margin-top: 0;
+}
+
+.service-detail-inner > :last-child {
+  margin-bottom: 32px;
+}
+
+.service-detail-inner p {
+  margin: 0 0 14px;
+}
+
+.service-detail-inner ul {
+  margin: 0 0 20px;
+  padding-left: 1.3em;
+}
+
+.service-detail-inner li {
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .service-accordion .service-toggle {
+    padding-right: 30px;
+  }
+
+  .service-plus {
+    top: 10px;
+    right: 0;
+    font-size: 22px;
+  }
+
+  .service-detail-inner {
+    font-size: 13px;
+  }
+}
